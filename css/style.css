@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap');
+
+body
+{
+	background:#292723;
+	margin:0;
+	overflow-y:scroll;
+	font-family: 'Assistant', sans-serif;
+	font-size:16px;
+}
+body.no-scroll
+{
+	overflow-y:hidden;
+}
+body *
+{
+	box-sizing: border-box;
+}
+
+@media (min-width:1081px){body{font-size:18px;}}
+@media (min-width:1281px){body{font-size:20px;}}
+@media (min-width:1601px){body{font-size:22px;}}
+
+
+.outer
+{
+	position:relative;
+	padding:0 1.5em;
+	margin:0 auto;
+	max-width:1600px;
+}
+.clearfix::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* layout */
+.split-container
+{
+	margin:0 auto;
+	text-align:center;
+}
+.rtl
+{
+	direction: rtl;
+}
+.split
+{
+	position:relative;
+	margin:0 auto;
+	direction: ltr;
+	vertical-align: middle;
+	white-space: normal;
+	text-align:left;
+}
+@media (min-width:961px)
+{
+	.split
+	{
+		display:inline-block;
+	}
+	.split-container
+	{
+		white-space: nowrap;
+	}
+	.split-50
+	{
+		width:50%;
+	}
+}
+
+
+
+
+
+
+
+header
+{
+	background-image:url('../img/header-bg.jpg');
+	background-size:cover;
+	background-position: bottom center;
+	background-attachment: fixed;
+}
+
+
+
+/* About */
+#top-nav
+{
+	padding:3em 0;
+	text-align: center;
+}
+#top-nav .ta-name
+{
+	display:inline-block;
+}
+#top-nav .ta-name img
+{
+	display:block;
+	max-width:100%;
+}
+#top-nav nav
+{
+	margin-top:1em;
+	line-height:35px;
+}
+
+#top-nav nav a
+{
+	color:#fff;
+	font-size:1.25em;
+	text-decoration: none;
+	vertical-align: middle;
+	letter-spacing: 1px;
+	font-weight:300;
+	padding:.25em 0;
+}
+#top-nav nav a:hover
+{
+	border-bottom:1px solid #fff;
+}
+#top-nav nav .nav-split
+{
+	display:inline-block;
+	margin:0 1.5em;
+	height:1.25em;
+	width:1px;
+	background:#fff;
+	opacity:.75;
+	vertical-align: middle;
+}
+@media (min-width:961px)
+{
+	#top-nav
+	{
+		padding:2.5em 0 0;
+	}
+	#top-nav .ta-name
+	{
+		display:block;
+		float:left;
+	}
+	#top-nav nav
+	{
+		margin-top:0;
+		float:right;
+	}
+
+}
+
+
+
+
+/* About */
+#about
+{
+	position:relative;
+	color:#fff;
+	padding-bottom:5%;
+}
+#about .about-img img
+{
+	display:block;
+	max-width:100%;
+}
+#about .about-info
+{
+	padding:1em 0;
+}
+#about .about-info h1
+{
+	font-size:2em;
+	font-weight:700;
+	margin:0 0 .5em;
+	padding:0;
+}
+#about .about-info p
+{
+	font-size:1em;
+	font-weight:300;
+	padding:0;
+	line-height: 1.5em;
+}
+#about .about-info p a
+{
+	font-weight:700;
+	text-decoration: none;
+	color:#fff;
+}
+#about .about-info p a:hover
+{
+	color:#ebd234;
+}
+@media (min-width:961px)
+{
+	#about
+	{
+		position:relative;
+		transform: translateY(10%);
+		padding-bottom:0;
+	}
+	#about .about-info
+	{
+		padding:1em 1.5em;
+	}
+}
+
+
+
+
+
+
+/* Home Main */
+.work-container
+{
+	background:#fcfceb;
+	padding-top:1em;
+	color:#121211;
+	text-align: center;
+}
+.work-container .outer
+{
+	padding-top:7.5%;
+	padding-bottom:12.5%;
+}
+.work-container .section-title
+{
+	font-size:2em;
+	margin:0 0 1em;
+}
+.more-work
+{
+	display:inline-block;
+	margin:1.5em auto 0;
+	padding:.5em 2em;
+	border:1px solid #121211;
+	color:#121211;
+	font-size:1.25em;
+	text-decoration: none;
+}
+.work-container article
+{
+
+	background:#f6ebd6;
+	padding:0 3em;
+	max-width:1280px;
+	margin:0 auto;
+}
+@media (min-width:961px)
+{
+	.work-container .outer
+	{
+		padding-top:7.5%;
+		padding-bottom:10%;
+	}
+}
+@media (min-width:1601px)
+{
+	.work-container .outer
+	{
+		padding:5em 0;
+	}
+}
+
+
+
+
+
+/* Work */
+.work-info
+{
+	text-align: left;
+	padding:3.5em .5em 3.5em;
+}
+.work-info h1
+{
+	font-size:1.75em;
+	margin:0;
+}
+.work-info h2
+{
+	font-size:.75em;
+	font-weight:300;
+	margin:1em 0 0;
+}
+.work-info .media-container
+{
+}
+
+
+
+
+
+/* Work-page overwrite */
+#page-work .work-container .work-info
+{
+	border-bottom:1px solid #53524b;
+}
+#page-work .work-container .work-info.last
+{
+	border-bottom:none;
+}
+
+
+
+
+/* Footer */
+footer
+{
+	background:#292723;
+	padding:2em 0;
+
+	text-align: center;
+}
+footer nav a
+{
+	display:inline-block;
+	margin:0 .5em;
+	text-decoration: none;
+}
+footer nav a:hover
+{
+	opacity:.75;
+}
+footer nav a img
+{
+	display:block;
+	width:2em;
+}
