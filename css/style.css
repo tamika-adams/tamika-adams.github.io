@@ -148,7 +148,8 @@ header
 #top-nav .ta-name img
 {
 	display:block;
-	max-width:100%;
+	max-width:360px;
+	width:100%;
 	visibility: hidden;
 }
 #top-nav .ta-name:hover
