@@ -426,7 +426,7 @@ header
 footer
 {
 	background:#292723;
-	padding:2em 0;
+	padding:3em 0 2em;
 
 	text-align: center;
 }
@@ -444,4 +444,21 @@ footer nav a img
 {
 	display:block;
 	width:2em;
+}
+footer h2
+{
+	margin-top:2em;
+	color:#fff;
+	text-align: center;
+	font-size:.75em;
+}
+footer h2 a
+{
+	font-size:.75em;
+	color:#ebd234;
+	text-decoration: none;
+}
+footer h2 a:hover
+{
+	color:#fff;
 }
