@@ -243,6 +243,7 @@ header
 	text-decoration: none;
 	color:#fff;
 	text-decoration: underline;
+	display:inline-block;
 }
 #about .about-info p a:hover
 {
@@ -254,7 +255,7 @@ header
 	{
 		position:relative;
 		transform: translateY(10%);
-		padding-bottom:0;
+		padding-bottom:7.5%;
 	}
 	#about .about-info
 	{
@@ -262,6 +263,15 @@ header
 	}
 }
 
+@media (min-width:1421px)
+{
+	#about
+	{
+		position:relative;
+		transform: translateY(10%);
+		padding-bottom:0;
+	}
+}
 
 
 
